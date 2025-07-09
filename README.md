@@ -16,7 +16,7 @@ The model ingests streaming data(obtained from csv file), evaluate demand and co
 
 **2.	Model 1 – Baseline Linear Model**
 * Applied formula: **Price(t+1) = Price(t) + α × (Occupancy / Capacity)**
-* Initialized price at $10 and α = 0.5 (tunable)
+* Initialized price at $10 and α = 0.6 (tunable)
 * Used recursive logic (via Python loop) to compute the price based on previous price.
 
 **3.	Model 2 – Demand-Based Pricing**
