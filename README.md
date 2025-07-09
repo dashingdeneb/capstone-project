@@ -2,7 +2,7 @@
 # Dynamic Pricing for Urban Parking Lots
 
 ## Project Overview
-This project builds a dynamic pricing of urban parking lots using real-time data and economic principles. Given 14 parking locations and multiple time-varying inputs (like occupancy, queue length, vehicle type, traffic, and special events), the objective is to create a pricing model that adjusts the parking price intelligently over time.
+This project builds a **dynamic pricing of urban parking lots using real-time data** and economic principles. Given 14 parking locations and multiple time-varying inputs (like occupancy, queue length, vehicle type, traffic, and special events), the objective is to create a pricing model that adjusts the parking price intelligently over time.
 The model ingests streaming data(obtained from csv file), evaluate demand and competition, and update prices accordingly using custom logic built only with NumPy, Pandas, and Pathway.
 
 ## Project Architecture & Workflow
@@ -36,14 +36,14 @@ The model ingests streaming data(obtained from csv file), evaluate demand and co
 
 **4.	Model 3 – Competitive Pricing**
 * Calculated proximity between 2 lots using Haversine formula(not implemented in codes, but used an online calculator).
-* Chose 2 lots BHMBCCTHL01(own lot) and BHMBCCMKT01(competitor lot)
+* Chose 2 lots **BHMBCCTHL01(own lot)** and **BHMBCCMKT01(competitor lot)**
 * Compared prices and applied competition logic
-1.	If lot full & nearby cheaper → reduce price or reroute.
-2.	If lot empty & nearby expensive → increase price moderately.
+   1.	If lot full & nearby cheaper → reduce price or reroute.
+   2.	If lot empty & nearby expensive → increase price moderately.
    
 **5.	Visualization with Bokeh**
 * Rendered dynamic price plots.
-* Compared own price vs. competitor lots.
+* Compared own price vs. competitor lot.
 
 ## Assumptions
 * Demand varies linearly with features.
