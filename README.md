@@ -38,8 +38,8 @@ The model ingests streaming data(obtained from csv file), evaluate demand and co
 * Calculated proximity between 2 lots using Haversine formula(not implemented in codes, but used an online calculator).
 * Chose 2 lots **BHMBCCTHL01(own lot)** and **BHMBCCMKT01(competitor lot)**
 * Compared prices and applied competition logic
-   1.	If lot full & nearby cheaper → reduce price or reroute.
-   2.	If lot empty & nearby expensive → increase price moderately.
+   1.	If lot full & nearby cheaper → reduce price.
+   2.	If lot empty & nearby expensive → increase price moderately and keep it below competitor price.
    
 **5.	Visualization with Bokeh**
 * Rendered dynamic price plots.
