@@ -79,4 +79,4 @@ Only a chunk of the plot is shown for clarity, the whole plot can be visualized 
 Red line is our lot’s(BHMBCCTHL01) initial price, orange line is the competitor’s (BHMBCCMKT01) price and green line is the adjusted price based. Yellow region shows the gap. 
 ![image](https://github.com/user-attachments/assets/398b93a8-6316-4311-9700-f65b6b1372ab)
 
-
+Price has been reduced by 1.5, just to show visible gap for better visualization and understanding. This value can be tuned as per our needed.
